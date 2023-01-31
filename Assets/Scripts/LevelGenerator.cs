@@ -77,10 +77,10 @@ public class LevelGenerator : MonoBehaviour
                     Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
                 }
 
-                if(coinCounter % coinEach == 0)
-                {
-                    Instantiate(coinPrefab, spawnPosition + coinOffset, Quaternion.identity);
-                }
+                //if(coinCounter % coinEach == 0)
+                //{
+                //    Instantiate(coinPrefab, spawnPosition + coinOffset, Quaternion.identity);
+                //}
                 lastPosition = spawnPosition;
             }
         }

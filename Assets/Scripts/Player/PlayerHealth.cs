@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     public ParticleSystem bloodHitPS;
     public BoxCollider2D extraCollider;
-    public SpriteRenderer shieldVisual;
+    //public SpriteRenderer shieldVisual;
 
     private BoxCollider2D collider;
     private int recordHeight;
@@ -32,17 +32,17 @@ public class PlayerHealth : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         PlayerKillLimit.PlayerKill += PlayerKillLimit_PlayerKill;
     }
-    private void Update()
-    {
-        if (HasShield)
-        {
-            shieldVisual.enabled = true;
-        }
-        else
-        {
-            shieldVisual.enabled = false;
-        }
-    }
+    //private void Update()
+    //{
+    //    if (HasShield)
+    //    {
+    //        shieldVisual.enabled = true;
+    //    }
+    //    else
+    //    {
+    //        shieldVisual.enabled = false;
+    //    }
+    //}
     private void PlayerKillLimit_PlayerKill(object sender, System.EventArgs e)
     {
         KillPlayer();
